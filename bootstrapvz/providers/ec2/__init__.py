@@ -67,6 +67,7 @@ def resolve_tasks(taskset, manifest):
 	                boot.DisableGetTTYs,
 	                tasks.network.EnableDHCPCDDNS,
 	                initd.AddExpandRoot,
+	                tasks.packages.AddWorkaroundGrowpart,
 	                initd.RemoveHWClock,
 	                initd.InstallInitScripts,
 
